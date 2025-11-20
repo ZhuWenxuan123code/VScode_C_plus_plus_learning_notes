@@ -2,22 +2,22 @@
 using namespace std;
 int main()
 {
-  // pointer
-  int a = 1;
-  cout << "tpye = " << typeid(a).name() << endl;
-  string food = "pizza";
-  string &meal = food; // meal µÄµØÖ·ºÍ food µÄµØÖ·ÊÇÒ»ÑùµÄ
-  cout << "food = " << food << endl;
-  cout << "meal = " << meal << endl;
-  cout << "food address = " << &food << endl;
-  cout << "meal address = " << &meal << endl;
-  cout << "====================" << endl;
-  string *ptr = &food;                    // ptr µÄÖµÊÇÒ»¸öµØÖ·
-  cout << "ptr = " << ptr << endl;        // ptr is a address
-  cout << "ptr value = " << *ptr << endl; // *ptr is a value of its address
-  *ptr = "hamburger";                     // equal to food = "hamburger"
-  cout << "food = " << food << endl;
-  cout << "food = " << *ptr << endl;
+	// pointer
+	int a = 1;
+	cout << "tpye = " << typeid(a).name() << endl;
+	string food = "pizza";
+	string &meal = food; // meal ï¿½Äµï¿½Ö·ï¿½ï¿½ food ï¿½Äµï¿½Ö·ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½
+	cout << "food = " << food << endl;
+	cout << "meal = " << meal << endl;
+	cout << "food address = " << &food << endl;
+	cout << "meal address = " << &meal << endl;
+	cout << "====================" << endl;
+	string *ptr = &food;					// ptr ï¿½ï¿½Öµï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ö·
+	cout << "ptr = " << ptr << endl;		// ptr is a address
+	cout << "ptr value = " << *ptr << endl; // *ptr is a value of its address
+	*ptr = "hamburger";						// equal to food = "hamburger"
+	cout << "food = " << food << endl;
+	cout << "food = " << *ptr << endl;
 
-  return 0;
+	return 0;
 }
