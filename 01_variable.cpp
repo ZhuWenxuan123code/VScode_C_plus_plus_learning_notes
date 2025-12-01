@@ -23,5 +23,10 @@ int main()
 
 	// test cout
 	cout << "i am ok" << endl;
+
+	// test sizeof
+	cout << "size of short is " << sizeof(short) << endl;
+	cout << "size of int is " << sizeof(int) << endl;
+
 	return 0;
 }
