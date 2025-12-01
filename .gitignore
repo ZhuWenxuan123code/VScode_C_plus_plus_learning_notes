@@ -14,7 +14,7 @@
 # 构建目录
 build/
 exes/
-
+temp.txt
 # 临时文件
 tmp/
 *.tmp
