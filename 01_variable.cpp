@@ -35,6 +35,8 @@ int main()
 	cout << "size of long long is " << sizeof(long long) << endl;
 
 	// test the boundary value of short
+	// the range of short is -32768 to 32767
+	// the range of unsigned short is 0 to 65535
 	cout << "=====testing the boundary value of short type=====" << endl;
 	short sam = SHRT_MAX;										 // initialize a variable to max value
 	unsigned short sue = sam;									 // okay if variable sam already defined
@@ -57,5 +59,6 @@ int main()
 	cout << "Sam has " << sam << " dollars and Sue has " << sue;
 	cout << " dollars deposited." << endl
 		 << "Lucky Sue!" << endl;
+
 	return 0;
 }
