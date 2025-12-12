@@ -60,5 +60,10 @@ int main()
 	cout << " dollars deposited." << endl
 		 << "Lucky Sue!" << endl;
 
+
+	// 值初始化示例
+	int x = int(); // value initialization to zero
+	cout << "x = " << x << endl;
 	return 0;
 }
+
