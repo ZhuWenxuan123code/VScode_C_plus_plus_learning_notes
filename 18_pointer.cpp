@@ -27,5 +27,11 @@ int main()
     cout << "ptr2[0] = " << ptr2[0] << endl;
     ptr2++; // 指针运算，指向下一个double类型变量
     cout << "ptr2[0] = " << *ptr2 << endl;
+
+    short tell[10];
+    short (*pp)[10] = &tell;
+    cout << "value of pp: " << pp << endl;
+    cout << "value of pp+1: " << pp + 1 << endl; // 二者差20字节
+
     return 0;
 }
