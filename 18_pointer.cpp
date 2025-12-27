@@ -3,9 +3,9 @@ using namespace std;
 int main()
 {
     int *p, *q; // 每个指针变量的声明都要加*
-
-    int *fellow;  // 错误
-    *fellow = 10; // 未初始化的指针变量fellow，指向未知地址，解引用会出错（可能指向程序代码地址）
+    int a = 10;
+    int *fellow = &a; // 错误
+    *fellow = 10;     // 未初始化的指针变量fellow，指向未知地址，解引用会出错（可能指向程序代码地址）
     cout << "fellow = " << *fellow << endl;
 
     int value;         // 正确，因为地址已经确定，地址是系统分配的
@@ -33,5 +33,8 @@ int main()
     cout << "value of pp: " << pp << endl;
     cout << "value of pp+1: " << pp + 1 << endl; // 二者差20字节
 
+    // char *animal = "bear"; 不合法
+    const char *animal = "bear"; // 合法
+    cout << animal << " at " << (int *)animal << endl;
     return 0;
 }
