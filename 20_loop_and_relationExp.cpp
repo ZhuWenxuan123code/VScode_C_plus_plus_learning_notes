@@ -17,7 +17,7 @@ int main()
         cout << "Welcome to the party!" << endl;
     }
 
-    float sec = 2;
+    float sec = 1;
     clock_t delay = sec * CLOCKS_PER_SEC;
     clock_t start = clock();
     while (clock() - start < delay)
@@ -25,5 +25,12 @@ int main()
         ;
     }
     cout << "waiting for two seconds:" << endl;
+
+    // 基于范围的for循环（C++11）
+    double scores[] = {98.5, 76.3, 89.4, 100.0, 67.5};
+    for (double score : scores)
+    {
+        cout << score << endl;
+    }
     return 0;
 }
