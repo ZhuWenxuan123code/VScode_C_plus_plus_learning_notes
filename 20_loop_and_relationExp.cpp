@@ -28,6 +28,11 @@ int main()
 
     // 基于范围的for循环（C++11）
     double scores[] = {98.5, 76.3, 89.4, 100.0, 67.5};
+
+    for (double &score : scores)
+    {
+        cin >> score;
+    }
     for (double score : scores)
     {
         cout << score << endl;
