@@ -28,14 +28,23 @@ int main()
 
     // 基于范围的for循环（C++11）
     double scores[] = {98.5, 76.3, 89.4, 100.0, 67.5};
-
-    for (double &score : scores)
-    {
-        cin >> score;
-    }
+    // for (double &score : scores)
+    // {
+    //     cin >> score;
+    // }
     for (double score : scores)
     {
         cout << score << endl;
+    }
+    while (cin.fail() == false) // Windows结束条件
+    {
+        int number;
+        cin >> number;
+        cout << "You entered: " << number << endl;
+    }
+    while (cin.get()) // while(cin) 也可以
+    {
+        cout << "enter success!" << endl;
     }
     return 0;
 }
