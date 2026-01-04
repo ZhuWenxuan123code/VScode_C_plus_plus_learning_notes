@@ -36,6 +36,7 @@ int main()
     {
         cout << score << endl;
     }
+    goto ckpt1;                 // 跳转到标号ckpt1处
     while (cin.fail() == false) // Windows结束条件
     {
         int number;
@@ -46,5 +47,7 @@ int main()
     {
         cout << "enter success!" << endl;
     }
+ckpt1:
+
     return 0;
 }
