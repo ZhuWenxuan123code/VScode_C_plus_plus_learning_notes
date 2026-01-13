@@ -43,6 +43,12 @@ int main()
         cin >> number;
         cout << "You entered: " << number << endl;
     }
+
+    while (cin.get() != '\n')
+    {
+        cout << "success!" << endl;
+    }
+
     while (cin.get()) // while(cin) 也可以
     {
         cout << "enter success!" << endl;
