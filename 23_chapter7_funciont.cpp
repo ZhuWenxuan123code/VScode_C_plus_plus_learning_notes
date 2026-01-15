@@ -9,5 +9,5 @@ int main()
     std::cout << "sizeof arr: " << sizeof arr << std::endl;
     std::cout << "sizeof p: " << sizeof p << std::endl; // 由操作系统决定，
 
-        return 0;
+    return 0;
 }
