@@ -11,8 +11,8 @@ const int LIMIT = 5;
 int main()
 {
     ofstream fout;
-    const char *fn = "ep-data.txt"; // 文件名
-    fout.open(fn);                  // 打开文件
+    const char *fn = "./files/ep-data.txt"; // 文件名
+    fout.open(fn);                          // 打开文件
 
     // 检查文件是否成功打开
     if (!fout.is_open())
