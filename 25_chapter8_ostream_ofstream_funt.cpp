@@ -42,6 +42,9 @@ int main()
     file_it(cout, objective, eps, LIMIT);
 
     cout << "Done\n";
+    cout << "OKasfasfdaf";           // Testing cout width setting:\n";
+    cout.width(1);                   // 设置输出字段的最小宽度，仅对下一次输出生效
+    cout << "Hello, World!" << endl; // 测试 cout 的宽度设置
     return 0;
 }
 
