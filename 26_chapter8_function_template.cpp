@@ -19,5 +19,12 @@ int main()
     Swap(num1, num2);
     cout << "num1:" << num1 << endl;
     cout << "num2:" << num2 << endl;
+    extern const int errors;
+    cout << "errors:" << errors << endl;
+    extern int ok;
+    cout << "ok:" << ok << endl;
+    // test.cpp file
+    // extern const int errors = 20;
+    // int ok = 10;
     return 0;
 }
